@@ -1,0 +1,85 @@
+I want to build a website in python flask, html, css and javascript. 
+The website should be very simple. It would have a blue banner with the 
+logo of the website on the right, then the title still on the right side, 
+and on the left of the banner the menu buttons. 
+On the home screen (menu: Home) the title will be repeated in the middle 
+with a bigger font. The home screen will feature an explanation paragraph 
+of the project. 
+Second Menu is "Video selection". On the top of the page, a little 
+explanation paragraph, then a container to drag&drop files with text in 
+the middle of the container that says *line1*"Drag&Drop files or folders 
+here"*line2*"Or select files or folders" with 'files' and 'folders' being 
+a hyperlink. The page is meant to accept images and videos, with or 
+without sound, but not sound alone. The page will have to either accept 
+files and folders that 
+are being dropped into the container while remembering that a dropped file
+without a folder is in the "1-Parent" folder, and that a file from a 
+folder is linked to its folder. Also a folder being dropped could store 
+another folder. Parent-Child relations should be kept in a table of a 
+database for all files. Also when folders are detected, their name 
+should be changed. All folders at one same level should have a number 
+as their first characters that represent the order they were dropped in, 
+then a "-" sign. At the first level, 1-Default is the only folder that 
+holds all files without folder and all dropped folders. So at level 2,
+dropped folders start with "1-NameOfFolder" and then moving on to the
+next folder would "2-NameOfFolder". Files appear after the folders. Also 
+the name of each folder 
+should contain no spaces and all new words should start with a capital 
+letter. Dropped files do not need to wait on a "submit" action to be 
+processed. They can be as soon as the user drops them (left mouse button 
+released above the container). The container should be wide but not that 
+long. Under the container will be another container that displays the 
+current file organisation. as stated before there will always be a 
+"1-Parent" folder to contain all the others, the default state of the 
+file system is by showing the parent folder opened so that if a file is 
+dropped, it appears at once. 
+The description for file and folder selection is very similar, except 
+on click of the word, the file system of the user should be shown so the 
+user may select files or folders. Either it is possible to select files 
+and folders at the same time, either not, I don't know what is 
+technologically possible. On that you may decide if the user may or may 
+not do that and thus if the hyperlinked words in the above container 
+are one link" files and folders" or two separate links "files" or 
+"folders" with each their restrictions on what they can accept. 
+on the top of the file system container, a thin banner should display
+options. Options are "remove", "display", "hide", "preview". By default 
+when a file or folder gets added, the name is displayed in the file system
+as stated above. It also by default receives the status "display=1" in 
+the database. Visually, files and folders with that status are highlighted
+in lime in the file system. If a folder has the status display=1 then it 
+means all its files have the status display=1. that rule goes both ways:
+if al files in a folder have status display=1 then the folder has status
+display=1. If status of display is 0 in the database for a file, then in 
+the file system it should be highlighted red. This implies: files and 
+folders in the file system container should be selecteable. If the user 
+clicks on the name of one then it should be put in a blue transparent 
+rectangle with a blue stroke. Clicking again on a selected file deselects 
+it, meaning the blue rectangle dissapears. Also there should be a table 
+in the database called "Selected" that gets updated whenever we select 
+or deselect a file. Performing an action on selected file(s) deselects 
+them all after the action has been performed. Actions are those specified
+in the banner ("remove", "display", "hide", "preview"). So a left click 
+selects a file, a right click selects it and displays a pop-up window 
+next to the mouse. In that little pop-up window you can see the actions
+displayed vertically. Clicking on "display" action either in the pop-up
+window either in the banner updates the "display" status of the selected 
+files and folders to 1 and highlights them in the correct color. Clicking 
+on "hide" action either in the pop-up window either in the banner 
+updates the "display" status of the selected files and folders to 0 and 
+highlights them in the correct color. Clicking on "remove" displays a 
+pop-up window thats says "Do you really wish to remove these files and 
+folders from the database?" with "yes" and "no" buttons. Default focus 
+should be on "no". The pop-up window should be displayed in the middle 
+of the screen. If the user clicks on "no" then simply close the pop-up
+window. The selected files and folders should keep being selected. If 
+the user clicks on "yes" then deselect all selected files and folders
+and delete all information on the selected files and folders in the 
+database as well as the selected files and folders themselves. Only then 
+should you delete the entry of those files in the "selected" table of the 
+database. Clicking on "Preview" action either in the pop-up window 
+either in the banner opens a pop-up window at 3/4 of the size of the 
+screen, centered in the middle, and displays the file. If it is a picture,
+just display it in the right ratio , if it is a video, play it in the 
+right ratio. For a video, there should be a progress bar, on the left of
+it display the time elapsed, on the right of it, display the remaining
+time. 
