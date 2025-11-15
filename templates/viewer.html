@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Viewer</h1>
+    <p>View your selected files</p>
+</div>
+
+<div class="content-section">
+    <div class="viewer-container">
+        <div class="media-display" id="mediaDisplay">
+            <div class="no-media" id="noMedia">
+                <p>No media files available. Upload some files first!</p>
+            </div>
+            <video id="videoPlayer" controls style="display: none; max-width: 100%; max-height: 70vh;"></video>
+            <img id="imagePlayer" style="display: none; max-width: 100%; max-height: 70vh; object-fit: contain;">
+        </div>
+        
+        <div class="player-controls">
+            <button id="playPauseBtn" class="control-btn">▶ Play</button>
+            <button id="nextBtn" class="control-btn">⏭️ Next</button>
+            <button id="shuffleBtn" class="control-btn">🔀 Shuffle</button>
+            <button id="orderedBtn" class="control-btn">📋 Ordered</button>
+            <button id="fullscreenBtn" class="control-btn">⛶ Fullscreen</button>
+            
+            <div class="player-status">
+                <span id="currentFileInfo">No file playing</span>
+                <span id="playbackMode">Mode: Stopped</span>
+            </div>
+        </div>
+        
+        <div class="player-settings">
+            <label>
+                <input type="checkbox" id="avoidConsecutiveWanted"> Avoid consecutive "Wanted" files
+            </label>
+            <label>
+                Image display time: 
+                <input type="number" id="imageDisplayTime" value="8" min="1" max="60"> seconds
+            </label>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/viewer.js') }}"></script>
+{% endblock %}

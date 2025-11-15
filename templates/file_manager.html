@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page-header">
+    <h2>Manage your files</h2>
+</div>
+
+<div class="content-section">
+    <div class="file-upload-container">
+        <div class="selection" id="selection">
+            <label for="fileInput" class="file-input-label">
+                <span class="browse-link">Browse Files</span>
+            </label>
+            <label for="folderInput" class="file-input-label" style="margin-left: 1rem;">
+                <span class="browse-link">Browse Folders</span>
+            </label>
+            <input type="file" id="fileInput" multiple accept="image/*,video/*" style="display: none;">
+            <input type="file" id="folderInput" webkitdirectory directory multiple style="display: none;">
+            <p class="file-types">Supported formats: Images (JPEG, PNG, GIF, etc.) and Videos (MP4, AVI, MOV, etc.)</p>
+        </div>
+        <div class="uploaded-files" id="uploadedFiles">
+            <h3>File Manager</h3>
+            <div class="files-list" id="filesList">
+                <p class="no-files">No files/folders uploaded yet</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
