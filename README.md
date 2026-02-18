@@ -28,8 +28,8 @@ Existing features:
 
 Planned features
 1) Home
-  - Write a real home page with explanation and project presentation
-  - Fix file counter
+   - Write a real home page with explanation and project presentation
+   - Fix file counter
 2) File Manager
    - Add folders and recursively search for files of supported formats
    - Display miniature
