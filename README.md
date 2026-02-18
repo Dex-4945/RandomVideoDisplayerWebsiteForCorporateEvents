@@ -10,7 +10,7 @@ Also if I want to be certain not to have to redownload the send pictures, I'd ha
 
 So this tool is:
 1) A file manager that clones the media
-2) A file viewer able to take in many formats, and also to mix pictures and videos
+2) A file viewer able to take in multiple formats, pictures and videos alike
 
 Existing features:
 1) File Manager
