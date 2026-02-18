@@ -27,6 +27,9 @@ Existing features:
   - Set interval before media change if it is an image
 
 Planned features
+0) Home
+  - Write a real home page with explanation and project presentation
+  - Fix file counter
 1) File Manager
    - Add folders and recursively search for files of supported formats
    - Display miniature
