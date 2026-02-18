@@ -14,17 +14,17 @@ So this tool is:
 
 Existing features:
 1) File Manager
-  - Add files
-  - Remove files from list
-  - Play/Pause slidehsp
+   - Add files
+   - Remove files from list
+   - Play/Pause slidehsp
 2) Viewer
-  - Play/Pause
-  - Next
-  - Shuffle/Ordered
-  - Fullscreen
-  - Deals with multiple formats
-  - Deals with images AND videos
-  - Set interval before media change if it is an image
+   - Play/Pause
+   - Next
+   - Shuffle/Ordered
+   - Fullscreen
+   - Deals with multiple formats
+   - Deals with images AND videos
+   - Set interval before media change if it is an image
 
 Planned features
 1) Home
