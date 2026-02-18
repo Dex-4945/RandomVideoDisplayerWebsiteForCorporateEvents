@@ -27,16 +27,16 @@ Existing features:
   - Set interval before media change if it is an image
 
 Planned features
-0) Home
+1) Home
   - Write a real home page with explanation and project presentation
   - Fix file counter
-1) File Manager
+2) File Manager
    - Add folders and recursively search for files of supported formats
    - Display miniature
    - Select/deselect media to make a preselection before/instead of deleting them
    - Rename files
    - Reorder them in case order matters for client
-2) Viewer
+3) Viewer
    - Perfectionate how I deal with different heights and widths of media
    - Perfectionnate how the images switch between each other
    - Create a "selection mode". When activated a toolbar gets superposed to slideshow and contains (de)selection buttons.
